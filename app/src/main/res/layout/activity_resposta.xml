@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.pacote.animalquiz.RespostaActivity"
+    android:background="@drawable/fundoum"
+    >
+    <LinearLayout
+        android:id="@+id/linearTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:fontFamily="cursive"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/caticon"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearResposta"
+        >
+        <ImageView
+            android:id="@+id/imgResposta"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/happy"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/resposta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acertou!"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgResposta"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/resposta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgResposta"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearResposta"
+        android:layout_marginTop="20dp"
+
+        >
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnSair"
+            android:text="@string/txtBtnSair"
+            android:background="#006400"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/btnJogarNovamente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnJogarNovamenteOnClick"
+            android:text="@string/txtBtnDeNovo"
+            android:background="#7FFF00"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

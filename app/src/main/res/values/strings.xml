@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AnimalQuiz</string>
+    <string name="btnJogar">Jogar!</string>
+    <string name="txtEsc1">Escolha a modalidade</string>
+    <string name="txtEsc2">clicando na figura</string>
+    <string name="textGato">Felinos</string>
+    <string name="txtPontos">Pontos: </string>
+    <string name="txtBtnResponder">Responder</string>
+    <string name="txtBtnDeNovo"> De novo! de novo! </string>
+    <string name="txtBtnSair"> Não quero mais! </string>
+    <string name="edtApelido">Apelido do Usuário</string>
+    <string name="btnApelido">Ok</string>
+</resources>

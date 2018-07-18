@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.pacote.animalquiz.GenericaActivity"
+    android:id="@+id/layoutGenerico"
+    android:background="@drawable/fundo"
+    >
+    <LinearLayout
+        android:id="@+id/linearTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:fontFamily="cursive"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/caticon"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgViewGenerica"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/miau"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearTitulo"
+        />
+
+    <TextView
+        android:id="@+id/txtPont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPontos"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_alignTop="@id/imgViewGenerica"
+        android:layout_toRightOf="@id/imgViewGenerica"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enunciado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@id/imgViewGenerica"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+
+    <RadioGroup
+        android:layout_below="@id/pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgRespostas"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta1"
+            android:text="Item 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta2"
+            android:text="Item 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta3"
+            android:text="Item 3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta4"
+            android:text="Item 4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_below="@id/rgRespostas"
+        android:id="@+id/btnResponder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnResponderOnClick"
+        android:text="@string/txtBtnResponder"
+        android:background="#7FFF00"
+        android:layout_margin="20dp"
+        />
+</RelativeLayout>

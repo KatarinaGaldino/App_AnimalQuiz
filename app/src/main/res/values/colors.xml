@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#38B0DE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fundo">#228B22</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gato">#006400</color>
+    <color name="cao">#008000</color>
+    <color name="burro">#228B22</color>
+</resources>

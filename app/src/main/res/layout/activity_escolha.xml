@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.pacote.animalquiz.EscolhaActivity"
+    android:background="@drawable/fundo"
+    >
+    <LinearLayout
+        android:id="@+id/linearTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:fontFamily="cursive"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/caticon"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtApelido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Olá, Fulano"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/textEscolha"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textEscolha0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtEsc1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/linearTitulo"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textEscolha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtEsc2"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/textEscolha0"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/linearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEscolha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageButton
+            android:id="@+id/imgButtonGato"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/miau"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_below="@id/textEscolha"
+            android:onClick="alertaNormal"
+            android:clickable="true"
+            />
+
+
+        <ImageButton
+            android:id="@+id/imgButtonCao"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/auau"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            />
+
+        <ImageButton
+            android:id="@+id/imgButtonCoruja"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/owl"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        >
+
+        <TextView
+            android:id="@+id/txtGato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            />
+
+
+        <TextView
+            android:id="@+id/txtCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            />
+
+        <TextView
+            android:id="@+id/txtBurro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
